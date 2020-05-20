@@ -24,7 +24,7 @@ import css from './ManageAvailabilityCalendar.css';
 // Constants
 
 const HORIZONTAL_ORIENTATION = 'horizontal';
-const MAX_AVAILABILITY_EXCEPTIONS_RANGE = 365;
+const MAX_AVAILABILITY_EXCEPTIONS_RANGE = 1;
 const MAX_BOOKINGS_RANGE = 180;
 const TODAY_MOMENT = moment().startOf('day');
 const END_OF_RANGE_MOMENT = TODAY_MOMENT.clone()
@@ -187,8 +187,8 @@ const renderDayContents = (calendar, availabilityPlan) => date => {
         {isInProgress ? (
           <IconSpinner rootClassName={css.inProgress} />
         ) : (
-          <span className={css.dayNumber}>{date.format('D')}</span>
-        )}
+            <span className={css.dayNumber}>{date.format('D')}</span>
+          )}
       </span>
     </div>
   );
@@ -485,7 +485,7 @@ ManageAvailabilityCalendar.defaultProps = {
   withPortal: false,
   initialVisibleMonth: null,
   numberOfMonths: 2,
-  onOutsideClick() {},
+  onOutsideClick() { },
   keepOpenOnDateSelect: false,
   renderCalendarInfo: null,
   isRTL: false,
@@ -493,8 +493,8 @@ ManageAvailabilityCalendar.defaultProps = {
   // navigation related props
   navPrev: null,
   navNext: null,
-  onPrevMonthClick() {},
-  onNextMonthClick() {},
+  onPrevMonthClick() { },
+  onNextMonthClick() { },
 
   // internationalization
   monthFormat: 'MMMM YYYY',

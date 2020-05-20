@@ -19,6 +19,7 @@ import {
 } from '../../components';
 import { TopbarContainer } from '../../containers';
 import SectionClasses from '../../components/SectionClasses/SectionClasses.js';
+import SectionTodaysClasses from '../../components/SectionTodaysClasses/SectionTodaysClasses.js';
 
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
@@ -66,6 +67,7 @@ export const LandingPageComponent = props => {
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
                 {/* <SectionLocations /> */}
+                <SectionTodaysClasses />
                 <SectionClasses />
               </div>
             </li>

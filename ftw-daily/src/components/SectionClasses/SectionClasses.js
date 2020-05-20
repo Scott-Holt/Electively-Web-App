@@ -1,8 +1,4 @@
-///things to do for this page....
-//create a new css page and import it (import css from './SectionClasses.css';)
-//try adding new <FormatMessage></FormatMessage> to this component.
-//WATCH THE ROUTING VIDEO FROM DEVS
-//export this component, then import into the landingpage.js file
+
 
 
 
@@ -127,5 +123,6 @@ SectionClasses.propTypes = {
 
 
 /////THIS IS EXPORTING THE SectionClasses COMPONENT/////////
+
 
 export default SectionClasses;

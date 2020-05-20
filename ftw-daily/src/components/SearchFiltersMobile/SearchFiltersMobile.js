@@ -16,6 +16,7 @@ import {
   KeywordFilter,
   PriceFilter,
   SelectSingleFilter,
+  // eslint-disable-next-line
   SelectMultipleFilter,
   SortBy,
   BookingDateRangeFilter,
@@ -36,6 +37,7 @@ class SearchFiltersMobileComponent extends Component {
     this.closeFilters = this.closeFilters.bind(this);
     this.resetAll = this.resetAll.bind(this);
     this.handleSelectSingle = this.handleSelectSingle.bind(this);
+    // eslint-disable-next-line
     this.handleSelectMultiple = this.handleSelectMultiple.bind(this);
     this.handlePrice = this.handlePrice.bind(this);
     this.handleDateRange = this.handleDateRange.bind(this);
@@ -88,6 +90,7 @@ class SearchFiltersMobileComponent extends Component {
     history.push(createResourceLocatorString('SearchPage', routeConfiguration(), {}, queryParams));
   }
 
+  // eslint-disable-next-line
   handleSelectMultiple(urlParam, options) {
     const { urlQueryParams, history } = this.props;
 

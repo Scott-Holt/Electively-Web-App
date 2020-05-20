@@ -37,7 +37,8 @@ import omit from 'lodash/omit';
 
 import routeConfiguration from '../../routeConfiguration';
 import { createResourceLocatorString } from '../../util/routes';
-import { SelectSingleFilter, SelectMultipleFilter, InlineTextButton } from '../../components';
+//if something breaks put SelectMultipleFilter, between SelectSingleFilter and InlineTextButton in line below
+import { SelectSingleFilter, InlineTextButton } from '../../components';
 import css from './SearchFiltersPanel.css';
 // import { amenities } from '../../marketplace-custom-config';
 
